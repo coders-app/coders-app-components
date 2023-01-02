@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+
 *,
 *::before,
 *::after {
@@ -52,3 +56,6 @@ button,
 a {
   cursor: pointer;
 }
+`;
+
+export default GlobalStyle;
