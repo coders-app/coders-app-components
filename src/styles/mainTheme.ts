@@ -27,12 +27,22 @@ const mainTheme: DefaultTheme = {
     horizontal: "15px",
     vertical: "15px",
   },
-  fontWeights: {
+  fontWeight: {
     bold: 700,
     semiBold: 600,
     medium: 500,
     regular: 400,
     light: 300,
+  },
+  fontFamily: {
+    text: "Open-Sans, sans-serif",
+    heading: "Montserrat, sans-serif",
+  },
+  fontSize: {
+    h1: "4.4rem",
+    h2: "3rem",
+    h3: "2.5rem",
+    text: "1rem",
   },
 };
 
