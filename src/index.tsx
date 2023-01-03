@@ -4,6 +4,8 @@ import App from "./App";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "./styles/mainTheme";
 import GlobalStyle from "./styles/GlobalStyle";
+import "@fontsource/montserrat";
+import "@fontsource/open-sans";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
