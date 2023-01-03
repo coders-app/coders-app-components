@@ -3,25 +3,21 @@ import { DefaultTheme } from "styled-components";
 const mainTheme: DefaultTheme = {
   colors: {
     primary: {
-      brandBase: "#2daae1",
-      brandDark: "#207aa1",
-      brandLight: "#73c3e6",
+      base: "#2daae1",
+      baseDark: "#207aa1",
+      baseLight: "#73c3e6",
     },
-    ink: {
+    neutrals: {
       mainDark: "#212529",
       mainLight: "#ffffff",
-      secondary: "#91a3b5",
-      secondaryDark: "#57626d",
-      secondaryLight: "bdc8d3",
+      base: "#91a3b5",
+      baseDark: "#57626d",
+      baseLight: "bdc8d3",
     },
-    error: {
-      base: "#e0435d",
-    },
-    success: {
-      base: "#2daae1",
-    },
-    warning: {
-      base: "e0d716",
+    feedback: {
+      error: "#e0435d",
+      success: "#2daae1",
+      warning: "e0d716",
     },
   },
   borderRadius: {
