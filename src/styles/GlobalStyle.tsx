@@ -51,21 +51,21 @@ h5,
 h6 {
   margin: 0;
   overflow-wrap: break-word;
-  font-size: var(--heading-font-family);
+  font-family: var(--heading-font-family);
 }
 
 h1 {
-  font-family: var(--text-heading1-font-size);
+  font-size: var(--text-heading1-font-size);
   font-weight: var(--text-bold-weight);
 }
 
 h2 {
-  font-family: var(--text-heading2-font-size);
+  font-size: var(--text-heading2-font-size);
   font-weight: var(--text-bold-weight);
 }
 
 h3 {
-  font-family: var(--text-heading3-font-size);
+  font-size: var(--text-heading3-font-size);
 }
 
 a {
