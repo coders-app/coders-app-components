@@ -3,14 +3,14 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  --color-text-primary: #212529;
-  --heading-font-family: Montserrat, sans-serif;
-  --text-font-family: Open-Sans, sans-serif;
-  --text-font-size: 1rem;
-  --text-heading1-font-size: 4.4rem;
-  --text-heading2-font-size: 3rem;
-  --text-heading3-font-size: 2.5rem;
-  --text-bold-weight: 800;
+  --color-text-primary: ${(props) => props.theme.colors.neutrals.mainDark};
+  --heading-font-family:  ${(props) => props.theme.fontFamily.heading};
+  --text-font-family:  ${(props) => props.theme.fontFamily.text};
+  --text-font-size: ${(props) => props.theme.fontSize.text};
+  --text-heading1-font-size: ${(props) => props.theme.fontSize.h1};
+  --text-heading2-font-size: ${(props) => props.theme.fontSize.h2};
+  --text-heading3-font-size: ${(props) => props.theme.fontSize.h3};
+  --text-bold-weight: ${(props) => props.theme.fontWeight.bold};
 }
 
 *,
