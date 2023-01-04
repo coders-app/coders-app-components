@@ -1,49 +1,57 @@
-import { DefaultTheme } from "styled-components";
+import { createTheme } from "@mui/material";
+import ThemeOptions from "./ThemeOptions";
 
-const mainTheme: DefaultTheme = {
-  colors: {
+const mainTheme: ThemeOptions = createTheme({
+  palette: {
     primary: {
-      base: "#2daae1",
-      baseDark: "#207aa1",
-      baseLight: "#73c3e6",
+      main: "#2daae1",
+      dark: "#207aa1",
+      light: "#73c3e6",
     },
-    neutrals: {
-      mainDark: "#212529",
-      mainLight: "#ffffff",
-      base: "#91a3b5",
-      baseDark: "#57626d",
-      baseLight: "bdc8d3",
+    secondary: {
+      main: "#212529",
+      light: "#ffffff",
     },
-    feedback: {
-      error: "#e0435d",
-      success: "#2daae1",
-      warning: "e0d716",
+    grey: {
+      "300": "#91a3b5",
+      "100": "bdc8d3",
+      "500": "#57626d",
+    },
+    error: {
+      main: "#e0435d",
+    },
+    success: {
+      main: "#2daae1",
+    },
+    warning: {
+      main: "e0d716",
     },
   },
-  borderRadius: {
-    small: "5px",
+  typography: {
+    fontFamily: "Open-Sans, sans-serif",
+    h1: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "4.4rem",
+      fontWeight: 800,
+    },
+    h2: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "3rem",
+      fontWeight: 800,
+    },
+    h3: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "2.5rem",
+      fontWeight: 800,
+    },
+    fontWeightBold: 800,
+    fontWeightMedium: 500,
+    fontWeightRegular: 400,
+    fontWeightLight: 300,
   },
-  padding: {
-    horizontal: "15px",
-    vertical: "15px",
+  shape: {
+    borderRadius: 5,
   },
-  fontWeight: {
-    bold: 700,
-    semiBold: 600,
-    medium: 500,
-    regular: 400,
-    light: 300,
-  },
-  fontFamily: {
-    text: "Open-Sans, sans-serif",
-    heading: "Montserrat, sans-serif",
-  },
-  fontSize: {
-    h1: "4.4rem",
-    h2: "3rem",
-    h3: "2.5rem",
-    text: "1rem",
-  },
-};
+});
 
 export default mainTheme;
