@@ -83,6 +83,14 @@
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "coders-app-components@0.1.0"
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/components/App/App.tsx",
+      "!src/**/*.stories.tsx"
+    ]
+  }
 }
