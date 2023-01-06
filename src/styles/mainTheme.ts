@@ -14,7 +14,7 @@ const mainTheme: ThemeOptions = createTheme({
     },
     grey: {
       "300": "#91a3b5",
-      "100": "bdc8d3",
+      "100": "#bdc8d3",
       "500": "#57626d",
     },
     error: {
@@ -24,7 +24,7 @@ const mainTheme: ThemeOptions = createTheme({
       main: "#2daae1",
     },
     warning: {
-      main: "e0d716",
+      main: "#e0d716",
     },
   },
   typography: {
