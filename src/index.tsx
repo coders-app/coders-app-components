@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import "@fontsource/montserrat";
 import "@fontsource/open-sans";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "./styles/mainTheme";
+import App from "./components/App/App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

@@ -34,7 +34,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic --exit-zero-on-changes --branch-name master"
   },
   "eslintConfig": {
     "extends": [
@@ -77,8 +78,19 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.14.0",
     "husky": "^8.0.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/components/App/App.tsx",
+      "!src/**/*.stories.tsx"
+    ]
   }
 }
